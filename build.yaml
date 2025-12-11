@@ -17,6 +17,7 @@
 #     cmake-args: -DCONFIG_ZMK_STUDIO=y
 #     artifact-name: corne_left_with_studio
 #
+# Totem keyboard with Seeed XIAO BLE controller
 ---
 include:
   - board: seeeduino_xiao
