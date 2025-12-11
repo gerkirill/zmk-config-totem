@@ -62,6 +62,7 @@
             // label = "HOMEROW_MODS";
             #binding-cells = <2>;
             flavor = "balanced";
+            hold-while-undecided;
             // hold-trigger-on-release;
             tapping-term-ms = <280>;
             // quick-tap-ms = <175>;
