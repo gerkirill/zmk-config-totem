@@ -27,8 +27,8 @@
 // Layer switchers
 #define SYMSPACE  &lt SYM_L SPACE
 #define NUMTAB &lt NUM_L TAB
-#define ARRET &lt ARR_L RET
-#define WINBSP &lt WIN_L BSPC
+#define ARRET &lt ARR_L ENTER
+#define WINBSP &lt WIN_L BACKSPACE
 
 // Home row mods macro
 #define HRML(k1,k2,k3,k4) &hm LGUI k1  &hm LALT k2  &hm LCTRL k3  &hm LSHFT k4
@@ -92,20 +92,20 @@
             key-positions = <5 15>;
         };
 
-        hn {
-            bindings = <&kp LA(BACKSPACE)>;
-            key-positions = <15 25>;
-        };
+//        hn {
+//            bindings = <&kp LA(BACKSPACE)>;
+//            key-positions = <15 25>;
+//        };
 
         tg {
             bindings = <&kp SQT>;
             key-positions = <4 14>;
         };
 
-        gb {
-            bindings = <&kp DQT>;
-            key-positions = <14 24>;
-        };
+//        gb {
+//            bindings = <&kp DQT>;
+//            key-positions = <14 24>;
+//        };
     };
 
     keymap {
@@ -220,11 +220,11 @@
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-        tri_layer {
-            if-layers = <1 2>;
-            then-layer = <3>;
-        };
-    };
+//    conditional_layers {
+//        compatible = "zmk,conditional-layers";
+//        tri_layer {
+//            if-layers = <1 2>;
+//            then-layer = <3>;
+//        };
+//    };
 };
