@@ -169,8 +169,8 @@
             label = "3";
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│          │          │          │          │          │   │ CLFT     │  PG_DN   │  PG_UP   │  CRGHT   │          │
-            &none      &none      &none      &none      &none          CLFT       &kp PG_DN  &kp PG_UP   CRGHT     &none
+        //│          │          │          │          │          │   │ CLFT     │  PG_DN   │  PG_UP   │  CRGHT   │ WLIST    │
+            &none      &none      &none      &none      &none          CLFT       &kp PG_DN  &kp PG_UP   CRGHT     WLIST
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  GUI     │  ALT     │  CTRL    │  SHIFT   │          │   │  <-      │  DOWN    │  UP      │  ->      │          │
             &kp LGUI   &kp LALT   &kp LCTRL  &kp LSHIFT &none          &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &none
@@ -187,13 +187,13 @@
             label = "4";
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│          │          │          │          │          │   │          │          │  WLIST   │  PG_UP   │  PG_DN   │
-            &none      &none      &none      &none      &none          &none      &none       WLIST      CPGUP      CPGDN
+        //│          │          │          │          │          │   │          │ PG_DN    │  PG_UP   │          │          │
+            &none      &none      &none      &none      &none          &none      CPGDN       CPGUP      &none      &none
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │  WIN+1   │  WIN+2   │  WIN+3   │  WIN+4   │  WIN+5   │
             &none      &none      &none      &none      &none         &kp LG(N1) &kp LG(N2) &kp LG(N3) &kp LG(N4) &kp LG(N5)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │          │          │          │   │  WIN+6   │  WIN+7   │  WIN+8   │  WIN+9   │          │
+        //│          │          │          │          │          │   │          │  WIN+6   │  WIN+7   │  WIN+8   │ WIN+9    │
    &none    &none      &none      &none      &none      &none          &none     &kp LG(N6) &kp LG(N7) &kp LG(N8) &kp LG(N9)  &none
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                     &trans   &trans     &trans         &mo BLT_L  &trans     &trans
