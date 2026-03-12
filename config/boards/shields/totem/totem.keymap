@@ -62,7 +62,7 @@
             #binding-cells = <2>;
             flavor = "balanced";
             hold-trigger-on-release;
-            tapping-term-ms = <1000>;
+            tapping-term-ms = <250>;
             bindings = <&kp>, <&kp>;
         };
     };
