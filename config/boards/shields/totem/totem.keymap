@@ -76,7 +76,7 @@
             bindings = <&kp ESCAPE>;
             key-positions = <1 2>;
             require-prior-idle-ms = <200>;
-            layers = <DEFAULT_L NUM_L SYM_L ARR_L WIN_L BLT_L>;
+            layers = <DEFAULT_L NUM_L SYM_L ARR_L WIN_L BLT_L MOUSE_L>;
         };
 
         io {
@@ -197,11 +197,11 @@
         //│          │          │          │          │          │   │          │ PG_DN    │  PG_UP   │          │          │
             &none      &none      &none      &none      &none          &none      CPGDN       CPGUP      &none      &none
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │          │          │          │   │  WIN+1   │  WIN+2   │  WIN+3   │  WIN+4   │  WIN+5   │
-            &none      &none      &none      &none      &none         &kp LG(N1) &kp LG(N2) &kp LG(N3) &kp LG(N4) &kp LG(N5)
+        //│ 1        │  2       │  3       │  4       │  5       │   │  WIN+1   │  WIN+2   │  WIN+3   │  WIN+4   │  WIN+5   │
+            &kp N1     &kp N2     &kp N3     &kp N4     &kp N5        &kp LG(N1) &kp LG(N2) &kp LG(N3) &kp LG(N4) &kp LG(N5)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │          │          │          │   │          │  WIN+6   │  WIN+7   │  WIN+8   │ WIN+9    │
-   &none    &none      &none      &none      &none      &none          &none     &kp LG(N6) &kp LG(N7) &kp LG(N8) &kp LG(N9)  &none
+        //│ 6        │  7       │  8       │  9       │  0       │   │          │  WIN+6   │  WIN+7   │  WIN+8   │ WIN+9    │
+   &none    &kp N6     &kp N7     &kp N8     &kp N9     &kp N0         &none     &kp LG(N6) &kp LG(N7) &kp LG(N8) &kp LG(N9)  &none
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼─========─┼──────────┴──────────┴──────────╯
                                     &trans   &trans     &trans         &mo BLT_L  &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴─========─╯
@@ -237,9 +237,9 @@
              &kp LGUI   &kp LALT   &kp LCTRL  &kp LSHIFT &none          &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT &none
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-    &none    &none      &none      &none      &none      &none          &none      &none      &none      &none      &none      &none
+    &none    &none      &none      &kp C      &kp V     &none          &none      &none      &none      &none      &none      &none
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                     &none    &none      &none          &mkp LCLK  &mkp RCLK  &tog MOUSE_L
+                                     &none    &none      &none          &mkp RCLK  &mkp LCLK  &tog MOUSE_L
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
