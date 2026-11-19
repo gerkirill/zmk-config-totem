@@ -76,22 +76,26 @@
             bindings = <&kp ESCAPE>;
             key-positions = <1 2>;
             require-prior-idle-ms = <200>;
+            layers = <DEFAULT_L NUM_L SYM_L ARR_L WIN_L BLT_L>;
         };
 
         io {
             bindings = <&kp CLCK>;
             key-positions = <7 8>;
             require-prior-idle-ms = <200>;
+            layers = <DEFAULT_L NUM_L SYM_L ARR_L WIN_L BLT_L>;
         };
 
         ei {
             bindings = <&caps_word>;
             key-positions = <2 7>;
+            layers = <DEFAULT_L NUM_L SYM_L ARR_L WIN_L BLT_L>;
         };
 
         hy {
             bindings = <&kp LC(BACKSPACE)>;
             key-positions = <5 15>;
+            layers = <DEFAULT_L NUM_L SYM_L ARR_L WIN_L BLT_L>;
         };
 
 //        hn {
@@ -102,6 +106,7 @@
         tg {
             bindings = <&kp SQT>;
             key-positions = <4 14>;
+            layers = <DEFAULT_L NUM_L SYM_L ARR_L WIN_L BLT_L>;
         };
 
 //        gb {
